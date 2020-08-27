@@ -11,12 +11,12 @@
 			{#each board as b}
 				<div class="board-item">
 					{b.title}
+					{#each items as item (item.id)}
+						{#if item.boardId === b.id}
+							<Item item={item} />
+						{/if}
+					{/each}
 				</div>
-			{/each}
-		</div>
-		<div class="item-grid">
-			{#each items as item (item.id)}
-				<Item {item} />
 			{/each}
 		</div>
 	</div>
@@ -37,9 +37,5 @@
 		padding: 10px 0;
 		border: 1px solid $gray7;
 		border-radius: 10px;
-	}
-	.item-grid {
-		display: flex;
-		justify-content: space-between;
 	}
 </style>

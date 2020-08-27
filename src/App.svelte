@@ -13,7 +13,7 @@
 		{ id: 2, boardId: 1, title: 'work2'},
 		{ id: 3, boardId: 2, title: 'work3'},
 		{ id: 4, boardId: 2, title: 'work4'},
-		{ id: 5, boardId: 2, title: 'work5'},
+		{ id: 5, boardId: 3, title: 'work5'},
 	]
 </script>
 
